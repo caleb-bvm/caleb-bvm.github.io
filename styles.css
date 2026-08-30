@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Ndot';
-  src: url('./fonts/Ndot57Caps-Regular.otf') format('opentype');
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-}
-
 :root {
   --navy: #020817;
   --navy-soft: #07162d;
@@ -91,7 +83,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   height: clamp(4.75rem, 10vh, 6.25rem);
   border-bottom: 1px solid var(--line);
-  font: 400 .72rem/1 'Ndot', ui-monospace, SFMono-Regular, Consolas, monospace;
+  font: 600 .66rem/1 ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: .15em;
 }
 
@@ -142,7 +134,7 @@ a { color: inherit; text-decoration: none; }
 .eyebrow {
   margin: 0 0 clamp(1.25rem, 2.5vh, 2rem);
   color: var(--white);
-  font: 400 clamp(1.35rem, 2.6vw, 2.7rem)/1 'Ndot', ui-monospace, SFMono-Regular, Consolas, monospace;
+  font: 500 clamp(1.35rem, 2.6vw, 2.7rem)/1 ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: -.045em;
 }
 
@@ -151,16 +143,21 @@ h1 {
   align-items: baseline;
   gap: .12em;
   margin: 0;
-  font-family: 'Ndot', ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
   font-size: clamp(5rem, 11.5vw, 11rem);
-  font-weight: 400;
-  letter-spacing: -.045em;
+  font-weight: 600;
+  letter-spacing: -.09em;
   line-height: .72;
 }
 
 h1 strong {
-  color: var(--white);
+  color: transparent;
   font-weight: inherit;
+  background-image: radial-gradient(circle, var(--white) 1.45px, transparent 1.8px);
+  background-position: .08em .08em;
+  background-size: 7px 7px;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 h1 em { color: var(--orange); font-style: normal; font-weight: 400; }
@@ -177,7 +174,7 @@ h1 em { color: var(--orange); font-style: normal; font-weight: 400; }
 .byline p {
   margin: 0;
   color: var(--muted);
-  font: 400 .72rem/1 'Ndot', ui-monospace, SFMono-Regular, Consolas, monospace;
+  font: 500 .68rem/1 ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: .16em;
   text-transform: uppercase;
 }
@@ -203,7 +200,7 @@ blockquote::before {
   display: block;
   margin-bottom: clamp(1.75rem, 4vh, 3rem);
   color: var(--orange);
-  font: 400 .64rem/1 'Ndot', ui-monospace, SFMono-Regular, Consolas, monospace;
+  font: 600 .6rem/1 ui-monospace, SFMono-Regular, Consolas, monospace;
   letter-spacing: .16em;
 }
 
@@ -228,6 +225,7 @@ blockquote p {
   .hero { gap: 4rem; padding-block: 3.75rem; }
   .eyebrow { font-size: 1.2rem; }
   h1 { font-size: clamp(4rem, 19vw, 5.8rem); }
+  h1 strong { background-size: 5px 5px; }
   blockquote p br { display: none; }
 }
 
