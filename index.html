@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#03101f" />
+    <meta name="theme-color" content="#020817" />
     <meta name="description" content="Welcome to CUBO +, a creative space by Caleb Ortiz." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="WELCOME TO CUBO +" />
@@ -20,19 +20,30 @@
   </head>
   <body>
     <main class="site-shell">
+      <div class="grain" aria-hidden="true"></div>
+      <div class="ambient ambient-blue" aria-hidden="true"></div>
+      <div class="ambient ambient-orange" aria-hidden="true"></div>
+
       <header class="topbar">
-        <a class="brand" href="#top" aria-label="CUBO + — inicio">CUBO <span>+</span></a>
+        <a class="brand" href="#top" aria-label="CUBO + — inicio">
+          <span class="dot-mark" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </span>
+          <span>CUBO +</span>
+        </a>
+        <p class="status" aria-label="Estado del sitio: en línea"><i aria-hidden="true"></i> ONLINE / 001</p>
       </header>
 
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="title-group">
-          <p class="welcome">WELCOME TO</p>
-          <h1 id="hero-title">CUBO <span>+</span></h1>
-          <p class="byline">By Caleb Ortiz</p>
+          <p class="eyebrow">WELCOME TO</p>
+          <h1 id="hero-title"><strong>CUBO</strong> <em>+</em></h1>
+          <div class="byline"><span aria-hidden="true"></span><p>By Caleb Ortiz</p></div>
         </div>
 
         <blockquote>
-          <p>“A jack of all trades is a master of none, but oftentimes better than a master of one.”</p>
+          <span class="quote-label">01 / MANIFESTO</span>
+          <p>“A jack of all trades is a master of none,<br />but oftentimes better than a master of one.”</p>
         </blockquote>
       </section>
     </main>
